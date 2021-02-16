@@ -1,0 +1,17 @@
+{
+    "name": "ExecutionOrder.Editor",
+    "references": [
+        "GUID:0a0b3db23e8feba469452b4ab4743184"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

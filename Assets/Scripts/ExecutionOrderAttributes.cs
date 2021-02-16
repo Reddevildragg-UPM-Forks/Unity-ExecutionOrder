@@ -1,38 +1,41 @@
 ﻿using System;
 
-[AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
-public class ExecutionOrderAttribute : System.Attribute
+namespace ExecutionOrder
 {
-	public int order;
-
-	public ExecutionOrderAttribute(int order)
+	[AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
+	public class ExecutionOrderAttribute : System.Attribute
 	{
-		this.order = order;
+		public int order;
+
+		public ExecutionOrderAttribute(int order)
+		{
+			this.order = order;
+		}
 	}
-}
 
-[AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
-public class ExecuteAfterAttribute : System.Attribute
-{
-	public Type targetType;
-	public int orderIncrease;
-
-	public ExecuteAfterAttribute(Type targetType)
+	[AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
+	public class ExecuteAfterAttribute : System.Attribute
 	{
-		this.targetType = targetType;
-		this.orderIncrease = 10;
+		public Type targetType;
+		public int orderIncrease;
+
+		public ExecuteAfterAttribute(Type targetType)
+		{
+			this.targetType = targetType;
+			this.orderIncrease = 10;
+		}
 	}
-}
 
-[AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
-public class ExecuteBeforeAttribute : System.Attribute
-{
-	public Type targetType;
-	public int orderDecrease;
-
-	public ExecuteBeforeAttribute(Type targetType)
+	[AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
+	public class ExecuteBeforeAttribute : System.Attribute
 	{
-		this.targetType = targetType;
-		this.orderDecrease = 10;
+		public Type targetType;
+		public int orderDecrease;
+
+		public ExecuteBeforeAttribute(Type targetType)
+		{
+			this.targetType = targetType;
+			this.orderDecrease = 10;
+		}
 	}
 }

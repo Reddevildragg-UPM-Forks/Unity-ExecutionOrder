@@ -1,0 +1,16 @@
+{
+  "name": "com.azixmcaze.Unity-ExecutionOrder",
+  "displayName": "Unity-ExecutionOrder",
+  "description": "A collection of attributes to control the execution order of your scripts in Unity from your source code.",
+  "version": "1.0.0",
+  "unity": "2019.3",
+  "license": null,
+  "author": {
+    "name": "azixMcAze",
+    "email": null,
+    "url": null
+  },
+  "repository": "https://github.com/azixMcAze/Unity-ExecutionOrder",
+  "bugs": null,
+  "homepage": null
+}
